@@ -1,0 +1,81 @@
+Strategy uses simple Moving Average cross strategy.
+Optimization improves 5 times the initial returns.
+Further needs: split randomized and tested on CV and test sets.
+
+Results:
+------Initial parameters------
+Start                     2000-01-03 00:00:00
+End                       2020-10-30 00:00:00
+Duration                   7606 days 00:00:00
+Exposure Time [%]                     97.0622
+Equity Final [$]                      21349.4
+Equity Peak [$]                       32489.1
+Return [%]                            113.494
+Buy & Hold Return [%]                 184.306
+Return (Ann.) [%]                     3.71335
+Volatility (Ann.) [%]                 22.9355
+Sharpe Ratio                         0.161904
+Sortino Ratio                        0.237339
+Calmar Ratio                        0.0846957
+Max. Drawdown [%]                    -43.8434
+Avg. Drawdown [%]                    -5.64405
+Max. Drawdown Duration     2234 days 00:00:00
+Avg. Drawdown Duration      103 days 00:00:00
+# Trades                                   45
+Win Rate [%]                          42.2222
+Best Trade [%]                        57.2874
+Worst Trade [%]                      -27.5631
+Avg. Trade [%]                        1.70001
+Max. Trade Duration         755 days 00:00:00
+Avg. Trade Duration         165 days 00:00:00
+Profit Factor                         1.64273
+Expectancy [%]                        2.91903
+SQN                                  0.637519
+_strategy                            SmaCross
+_equity_curve                             ...
+_trades                       Size  EntryB...
+dtype: object
+Expectancy [%]                                              2.91903
+SQN                                                        0.637519
+_strategy                                                  SmaCross
+_equity_curve                       Equity  DrawdownPct Drawdown...
+_trades               Size  EntryBar  ExitBar  ...  EntryTime   ...
+dtype: object
+------Optimized parameters------
+Start                     2000-01-03 00:00:00
+End                       2020-10-30 00:00:00
+Duration                   7606 days 00:00:00
+Exposure Time [%]                     96.3945
+Equity Final [$]                      68871.2
+Equity Peak [$]                       94470.5
+Return [%]                            588.712
+Buy & Hold Return [%]                 184.306
+Return (Ann.) [%]                     9.72035
+Volatility (Ann.) [%]                 22.8983
+Sharpe Ratio                         0.424501
+Sortino Ratio                        0.665324
+Calmar Ratio                          0.24839
+Max. Drawdown [%]                    -39.1335
+Avg. Drawdown [%]                    -3.77484
+Max. Drawdown Duration      644 days 00:00:00
+Avg. Drawdown Duration       41 days 00:00:00
+# Trades                                   31
+Win Rate [%]                          45.1613
+Best Trade [%]                        58.6987
+Worst Trade [%]                      -22.7571
+Avg. Trade [%]                        6.43351
+Max. Trade Duration         937 days 00:00:00
+Avg. Trade Duration         237 days 00:00:00
+Profit Factor                         3.38135
+Expectancy [%]                        8.18753
+SQN                                   1.34559
+_strategy                 SmaCross(len_fas...
+_equity_curve                             ...
+_trades                       Size  EntryB...
+dtype: object
+Expectancy [%]                                              8.18753
+SQN                                                         1.34559
+_strategy                        SmaCross(len_fast=41,len_slow=135)
+_equity_curve                       Equity  DrawdownPct Drawdown...
+_trades               Size  EntryBar  ExitBar  ...  EntryTime   ...
+dtype: object

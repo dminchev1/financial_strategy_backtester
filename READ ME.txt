@@ -1,6 +1,9 @@
 Strategy uses simple Moving Average cross strategy.
-Optimization improves 5 times the initial returns.
-Further needs: split randomized and tested on CV and test sets.
+Time frame - last 20 years.
+Optimal values found:  SmaCross(len_fast=41, len_slow=135)
+Optimization improves with 404.4% from the buy and hold returns.
+Optimization improves with 475.7% from the initial strategy parameters.
+Further steps: split randomized and tested on CV and test sets.
 
 Results:
 ------Initial parameters------
